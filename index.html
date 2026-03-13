@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medma - Stop Waiting. Start Healing.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="static/front_view/styles.css" />
+</head>
+
+<body>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">Medma</a>
+      <button class="nav__search-pill" id="searchPill" aria-label="Open search">
+        <svg class="nav__search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8" />
+          <path d="m21 21-4.35-4.35" />
+        </svg>
+        <span class="nav__search-text">Search</span>
+        <kbd class="nav__search-kbd">Ctrl K</kbd>
+      </button>
+      <nav class="nav__links">
+        <a href="#about">About</a>
+        <a href="#mission">Mission</a>
+        <a href="#join">Join Us</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav__right">
+        <button class="nav__search-mobile" id="searchMobile" aria-label="Open search">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8" />
+            <path d="m21 21-4.35-4.35" />
+          </svg>
+        </button>
+        <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="nav__mobile" id="navMobile">
+      <a href="#about">About</a>
+      <a href="#mission">Mission</a>
+      <a href="#join">Join Us</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <section class="hero" id="hero">
+    <div class="hero__blobs">
+      <div class="blob blob--1"></div>
+      <div class="blob blob--2"></div>
+      <div class="blob blob--3"></div>
+    </div>
+    <div class="hero__inner">
+      <div class="hero__tag">Smart Healthcare Queue Management</div>
+      <h1 class="hero__headline">
+        Stop Waiting.<br /><em>Start Healing.</em>
+      </h1>
+      <p class="hero__sub">The smart way to manage clinic visits and patient flow.</p>
+      <div class="hero__actions">
+        <a href="#join" class="btn btn--primary" data-scroll="join">Join as a Patient</a>
+        <a href="#join" class="btn btn--outline" data-scroll="join">Join as a Clinic</a>
+      </div>
+    </div>
+    <div class="hero__stats">
+      <div class="stat-card">
+        <span class="stat-card__num">45<em>min</em></span>
+        <span class="stat-card__label">Average wait time saved</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-card__num">3<em>x</em></span>
+        <span class="stat-card__label">Faster patient intake</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-card__num">100<em>%</em></span>
+        <span class="stat-card__label">Paperless workflow</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="about__inner">
+      <div class="about__col about__col--problem">
+        <div class="section-label">The Problem</div>
+        <h2 class="about__title">Clinics were not built for the chaos they face today.</h2>
+        <p>Every morning, dozens of patients crowd into waiting rooms with no clear order, no time estimates, and no way
+          to plan their day. Doctors fall behind. Patients grow frustrated. Staff manage chaos instead of care.</p>
+        <p>Overbooking, no-shows, paper records, and phone-only scheduling create a system that fails everyone involved
+          particularly in cities where demand far outpaces clinic capacity.</p>
+        <div class="problem-pill">No time estimates for patients</div>
+        <div class="problem-pill">Manual, phone-only booking</div>
+        <div class="problem-pill">Overcrowded waiting rooms</div>
+        <div class="problem-pill">No-show slots go to waste</div>
+      </div>
+      <div class="about__divider"></div>
+      <div class="about__col about__col--solution">
+        <div class="section-label">The Solution</div>
+        <h2 class="about__title">Medma brings order and calm back to local clinics.</h2>
+        <p>Medma is a smart clinic management platform built specifically for local healthcare in Morocco. Patients book
+          remotely, receive real-time queue updates, and arrive only when their turn is near.</p>
+        <ul class="feature-list">
+          <li>
+            <span class="feature-list__icon"></span>
+            <div>
+              <strong>Smart Queue Management</strong>
+              <p>Dynamic scheduling that adapts to real-world clinic pace, reducing idle time and overflow.</p>
+            </div>
+          </li>
+          <li>
+            <span class="feature-list__icon"></span>
+            <div>
+              <strong>Remote Follow-ups</strong>
+              <p>Patients receive updates and reminders via SMS, cutting no-shows and walk-in overflow.</p>
+            </div>
+          </li>
+          <li>
+            <span class="feature-list__icon"></span>
+            <div>
+              <strong>Clinic Dashboard</strong>
+              <p>Doctors and staff gain a real-time overview of the day's flow, bookings, and patient status.</p>
+            </div>
+          </li>
+          <li>
+            <span class="feature-list__icon"></span>
+            <div>
+              <strong>Zero Setup Friction</strong>
+              <p>Clinics go live in minutes. No hardware, no training overhead, no disruption to daily operations.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="mission" id="mission">
+    <div class="mission__inner">
+      <div class="section-label section-label--light">Our Mission</div>
+      <blockquote class="mission__quote">
+        We are on a mission to bring calm to local clinics and give patients their time back.
+      </blockquote>
+      <p class="mission__body">Healthcare should feel like care not like waiting in line. We believe every patient
+        deserves to know when they will be seen, and every doctor deserves a practice that runs with clarity.</p>
+    </div>
+    <div class="mission__pattern"></div>
+  </section>
+
+  <section class="join" id="join">
+    <div class="join__inner">
+      <div class="section-label">Join the Waitlist</div>
+      <h2 class="join__title">Be among the first to experience Medma.</h2>
+      <div class="join__cards">
+
+        <div class="join-card" id="patientCard">
+          <div class="join-card__header">
+            <div class="join-card__icon join-card__icon--patient"></div>
+            <div>
+              <h3>Patient Waitlist</h3>
+              <p>Get early access and skip the line from day one.</p>
+            </div>
+          </div>
+          <form class="join-card__form" id="patientForm" novalidate>
+            <div class="field">
+              <label for="p-name">Full Name</label>
+              <input type="text" id="p-name" name="name" placeholder="Your full name" required />
+            </div>
+            <div class="field">
+              <label for="p-phone">Phone Number</label>
+              <input type="tel" id="p-phone" name="phone" placeholder="06/7XX XXX XXX" required />
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Reserve My Spot</button>
+          </form>
+          <div class="join-card__success" id="patientSuccess" hidden>
+            <div class="success-icon"></div>
+            <h3>You are on the list.</h3>
+            <p>We will reach out as soon as Medma launches near you. Thank you for trusting us with your time.</p>
+          </div>
+        </div>
+
+        <div class="join-card join-card--alt" id="clinicCard">
+          <div class="join-card__header">
+            <div class="join-card__icon join-card__icon--clinic"></div>
+            <div>
+              <h3>Clinic Waitlist</h3>
+              <p>Partner with us and modernize your practice.</p>
+            </div>
+          </div>
+          <form class="join-card__form" id="clinicForm" novalidate>
+            <div class="field">
+              <label for="c-name">Doctor Name</label>
+              <input type="text" id="c-name" name="doctor_name" placeholder="Dr. Full Name" required />
+            </div>
+            <div class="field">
+              <label for="c-specialty">Specialty</label>
+              <input type="text" id="c-specialty" name="specialty" placeholder="e.g. General Medicine, Cardiology"
+                required />
+            </div>
+            <div class="field">
+              <label for="c-city">City</label>
+              <input type="text" id="c-city" name="city" placeholder="e.g. Khouribga" required />
+            </div>
+            <div class="field">
+              <label for="c-phone">Phone Number</label>
+              <input type="tel" id="c-phone" name="phone" placeholder="06/7XX XXX XXX" required />
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Partner With Medma</button>
+          </form>
+          <div class="join-card__success" id="clinicSuccess" hidden>
+            <div class="success-icon"></div>
+            <h3>Welcome to the network.</h3>
+            <p>Our team will be in touch to get your clinic set up before launch. We are glad to have you on board.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="contact__inner">
+      <div class="section-label">Stay Tuned</div>
+      <h2 class="contact__title">Launching soon in Casablanca, Rabat, and beyond.</h2>
+      <p class="contact__body">We are starting strong in Morocco's largest cities, building trust, and expanding
+        thoughtfully. Follow along as we grow clinic by clinic, city by city.</p>
+      <a href="/cdn-cgi/l/email-protection#d3bbb6bfbfbc93beb6b7beb2fdbeb2" class="contact__email"><span
+          class="__cf_email__" data-cfemail="e088858c8c8fa08d85848d81ce8d81">medma.contact.ma@gmail.com</span></a>
+
+      <div class="contact__form-wrap">
+        <div class="contact__form-header">
+          <h3 class="contact__form-title">Get in touch</h3>
+          <p class="contact__form-sub">Have a question or a request? We read every message.</p>
+        </div>
+        <form class="contact__form" id="contactForm" novalidate>
+          <div class="field">
+            <label for="ct-role">Identified as</label>
+            <input type="text" id="ct-role" name="role" placeholder="e.g. Patient, Doctor, Partner" required />
+          </div>
+          <div class="field">
+            <label for="ct-name">Your Name</label>
+            <input type="text" id="ct-name" name="name" placeholder="Full name" required />
+          </div>
+          <div class="field">
+            <label for="ct-email">Email Address</label>
+            <input type="email" id="ct-email" name="email" placeholder="you@example.com" required />
+          </div>
+          <div class="field">
+            <label for="ct-message">Message</label>
+            <textarea id="ct-message" name="message" placeholder="Your question or request..." rows="4"
+              required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+        </form>
+        <div class="join-card__success" id="contactSuccess" hidden>
+          <div class="success-icon"></div>
+          <h3>Message received.</h3>
+          <p>We will get back to you at your email address as soon as possible. Thank you for reaching out.</p>
+        </div>
+      </div>
+    </div>
+    <div class="contact__ring contact__ring--1"></div>
+    <div class="contact__ring contact__ring--2"></div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__inner">
+
+      <div class="footer__brand">
+        <span class="footer__logo">Medma</span>
+        <span class="footer__tagline">Healthcare, redesigned.</span>
+      </div>
+
+      <div class="footer__social">
+        <a href="/cdn-cgi/l/email-protection#6008050c0c0f200d05040d014e0d01" class="footer__social-link"
+          aria-label="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="4" width="20" height="16" rx="2" />
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+          </svg>
+        </a>
+        <a href="https://x.com/medma" target="_blank" rel="noopener noreferrer" class="footer__social-link"
+          aria-label="X">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+          </svg>
+        </a>
+        <a href="https://instagram.com/medma" target="_blank" rel="noopener noreferrer" class="footer__social-link"
+          aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" />
+            <circle cx="12" cy="12" r="4" />
+            <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none" />
+          </svg>
+        </a>
+        <a href="https://facebook.com/medma" target="_blank" rel="noopener noreferrer" class="footer__social-link"
+          aria-label="Facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+          </svg>
+        </a>
+      </div>
+
+      < <span class="footer__copy">© 2025 Medma. All rights reserved.</span>
+
+    </div>
+  </footer>
+
+  <div class="search-overlay" id="searchOverlay" aria-hidden="true" role="dialog" aria-modal="true"
+    aria-label="Site search">
+    <div class="search-overlay__backdrop" id="searchBackdrop"></div>
+    <div class="search-overlay__panel">
+      <div class="search-overlay__input-wrap">
+        <svg class="search-overlay__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8" />
+          <path d="m21 21-4.35-4.35" />
+        </svg>
+        <input type="text" class="search-overlay__input" id="searchInput" placeholder="Search sections, topics..."
+          autocomplete="off" spellcheck="false" />
+        <kbd class="search-overlay__esc">Esc</kbd>
+      </div>
+      <div class="search-overlay__results" id="searchResults" role="listbox"></div>
+      <div class="search-overlay__footer">
+        <span><kbd>↑</kbd><kbd>↓</kbd> navigate</span>
+        <span><kbd>↵</kbd> go</span>
+        <span><kbd>Esc</kbd> close</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="static/front_view/app.js"></script>
+  <script src="static/front_view/lookup_bar.js"></script>
+  <script src="static/front_view/patient_waitlist.js"></script>
+  <script src="static/front_view/clinic_waitlist.js"></script>
+  <script src="static/front_view/medma_contact.js"></script>
+</body>
+
+</html>
